@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/perooru.lwc-custom-slider",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 5YfGwNDNLiQYmUFFIDS2 --open"
+  }
+}

@@ -1,0 +1,64 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">{title}</h1>
+		<h2><b>Custom Slider</b></h2>
+
+		<br/><br/>
+
+		<lightning-slider
+        label="Volume"
+        step="1"
+        value={myValue}
+				min="0"
+				max="10"
+        onchange={handleChange}
+				variant="label-hidden"
+    >
+    </lightning-slider>
+
+		<div class="slds-grid slds-gutters slider-down-value">
+			<div class="slds-col box first">
+				<span>0</span>
+			</div>
+			<div class="slds-col box">
+				<span>1</span>
+			</div>
+			<div class="slds-col box">
+				<span>2</span>
+			</div>
+			<div class="slds-col box">
+				<span>3</span>
+			</div>
+			<div class="slds-col box">
+				<span>4</span>
+			</div>
+			<div class="slds-col box">
+				<span>5</span>
+			</div>
+			<div class="slds-col box">
+				<span>6</span>
+			</div>
+			<div class="slds-col box">
+				<span>7</span>
+			</div>
+			<div class="slds-col box">
+				<span>8</span>
+			</div>
+			<div class="slds-col box">
+				<span>9</span>
+			</div>
+			<div class="slds-col box last">
+				<span>10</span>
+			</div>
+		</div>
+
+
+    <div class="slds-m-vertical_medium">
+        <p>
+            The value of the slider is:
+            <span class="slds-text-heading_small">{myValue}</span>
+        </p>
+    </div>
+
+	</div>
+</template>
